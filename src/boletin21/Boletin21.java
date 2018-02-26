@@ -5,12 +5,13 @@
 */
 package boletin21;
 
+import java.io.IOException;
 import javax.swing.JOptionPane;
 
 public class Boletin21 {
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Metodos met = new Metodos();
        String frase=JOptionPane.showInputDialog(null, "Introduzca frase");
        met.guardar(frase);

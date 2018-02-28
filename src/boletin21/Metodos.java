@@ -32,6 +32,7 @@ public class Metodos {
         File fichero;
         PrintWriter fw;
         String a;
+        int i=0;
         try {
 
             fichero=new File(sFichero);
@@ -40,7 +41,8 @@ public class Metodos {
             // escribir=new PrintWriter(new File("frases.txt"));// otra opción
             while (it.hasNext()) {
                 a= it.next();
-               fw.println(a);
+               fw.println(i+" "+a);
+               i+=1;
             }
             fw.close();
 
